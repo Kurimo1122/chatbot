@@ -1,3 +1,5 @@
+Jinja2
+Werkzeug
+gunicorn
 line-bot-sdk
 flask
-python=3.5.2
