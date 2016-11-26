@@ -1,5 +1,4 @@
 Jinja2
 Werkzeug
 gunicorn
-line-bot-sdk
 flask
