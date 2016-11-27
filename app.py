@@ -70,7 +70,13 @@ def callback():
         if not isinstance(event.message, TextMessage):
             continue
         """
-        app.logger.info("details.message: " + event.details[].message.text)
+        #app.logger.info("details.message: " + event.details[].message.text)
+        print("hello world")
+        sys.stdout.flush()
+
+        print(event)
+        sys.stdout.flush()
+
         if isinstance(event, MessageEvent):    
             line_bot_api.reply_message(
                 event.reply_token,
