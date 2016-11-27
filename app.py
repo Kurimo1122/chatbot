@@ -70,11 +70,12 @@ def callback():
         if not isinstance(event.message, TextMessage):
             continue
         """
+        app.logger.info("details.message: " + event.details[].message.text)
         if isinstance(event, MessageEvent):    
             line_bot_api.reply_message(
                 event.reply_token,
-                #TextSendMessage(text=event.message.text)
-                TextSendMessage(text=event.details[].message.text)
+                TextSendMessage(text=event.message.text)
+                #TextSendMessage(text=event.details[].message.text)
                 #TextSendMessage(text="aiueo")
             )
 
@@ -89,4 +90,5 @@ if __name__ == "__main__":
     arg_parser.add_argument('-d', '--debug', default=False, help='debug')
     options = arg_parser.parse_args()
 
-    app.run(debug=options.debug, port=options.port)
+    #app.run(debug=options.debug, port=options.port)
+    app.run(debug=True)
