@@ -74,7 +74,7 @@ def callback():
             line_bot_api.reply_message(
                 event.reply_token,
                 #TextSendMessage(text=event.message.text)
-                TextSendMessage(details[].message.text)
+                TextSendMessage(text=details[].message.text)
                 #TextSendMessage(text="aiueo")
             )
 
