@@ -83,7 +83,7 @@ def callback():
         if isinstance(event, MessageEvent):    
             line_bot_api.reply_message(
                 
-                "nHuyWiB7yP5Zw52FIkcQobQuGDXCTA",
+                event.reply_token,
                 #event.replyToken,
                 #event[1],
                 TextSendMessage(text=event.message.text)
