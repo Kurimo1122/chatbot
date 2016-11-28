@@ -79,9 +79,13 @@ def callback():
 
         if isinstance(event, MessageEvent):    
             line_bot_api.reply_message(
-                #event.reply_token,
+                
+                event.reply_token,
+                
+                print(event.reply_token)
+                sys.stdout.flush()
                 #event.replyToken,
-                event[1],
+                #event[1],
                 TextSendMessage(text=event.message.text)
                 #TextSendMessage(text=event.details[].message.text)
                 #TextSendMessage(text="aiueo")
